@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outlook</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="search-bar">
+            <input type="text" class="search-bar-input" id="search" placeholder="Search..." title="Type in to search" autofocus/>
+            <button class="clear-icon" title="Clear" onclick="clearSearch()">X</button>
+        </div>
+
+        <div class="search-reasult-heading">
+            <h3>
+                Search Results
+            </h3>
+        </div>
+
+        <div class="filter-area">
+            <select id="filterByType" onChange="filterByType()">
+                <option value="">Type</option>
+                <option value="Post">Post</option>
+                <option value="Reply">Replies</option>
+            </select>
+        </div>
+
+        <div class="result-container" id="result-container-area"></div>
+
+        <div class="pagination" id="pagination-container">
+            <!-- <a href="#">&laquo;</a> -->
+            <!-- <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a> -->
+            <!-- <a href="#">&raquo;</a> -->
+          </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>
